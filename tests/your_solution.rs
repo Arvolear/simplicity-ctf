@@ -152,7 +152,7 @@ fn solution(context: simplex::TestContext) -> anyhow::Result<()> {
     let tx_receipt = signer.broadcast(&spend_tx)?;
     println!("Solution tx broadcast: {}", tx_receipt);
     tx_receipt.wait()?;
-    println!("Solution tx confirmed! 🎉 CTF SOLVED!");
+    println!("Solution tx confirmed! CTF SOLVED!");
 
     Ok(())
 }
